@@ -1,4 +1,4 @@
-package com.walle.guide;
+package com.walle.guide.single;
 
 /**
  * 枚举单例

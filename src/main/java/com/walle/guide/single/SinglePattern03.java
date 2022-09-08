@@ -1,4 +1,4 @@
-package com.walle.guide;
+package com.walle.guide.single;
 
 /**
  * 内部类
