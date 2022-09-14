@@ -1,8 +1,8 @@
 package com.walle.guide.single;
 
 /**
- * 内部类
- * JAM内部机制能够保证一个类被加载时，这个类的加载过程是线程互斥的。
+ * 静态内部类
+ * 利用JVM内部机制实现实例创建时的唯一、线程安全、延迟加载。
  */
 public class SinglePattern03 {
     private SinglePattern03() {
@@ -16,5 +16,4 @@ public class SinglePattern03 {
     public static SinglePattern03 getInstance() {
         return SinglePattern03.getInstance();
     }
-
 }

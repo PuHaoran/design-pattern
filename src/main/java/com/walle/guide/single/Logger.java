@@ -4,28 +4,28 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Todo {
+public class Logger {
     private FileWriter fw;
-    private Todo(){
-        File f = new File("./todolist.txt");
+    private Logger(){
+        File f = new File("log.txt");
         try {
             fw = new FileWriter(f, true);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-    private static final Todo INSTANCE = new Todo();
+    private static final Logger INSTANCE = new Logger();
 
-    public static Todo getInstance(){
+    public static Logger getInstance(){
         return INSTANCE;
     }
 
     public void log(String msg) {
         try {
             fw.write(msg);
+            fw.flush();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
 }

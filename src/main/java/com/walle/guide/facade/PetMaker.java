@@ -9,11 +9,11 @@ public class PetMaker {
         cat = new Cat();
     }
 
-    public void eatDog() {
-        dog.eat();
+    public void behaviorDog() {
+        dog.behavior();
     }
 
-    public void eatCat() {
-        cat.eat();
+    public void behaviorCat() {
+        cat.behavior();
     }
 }
