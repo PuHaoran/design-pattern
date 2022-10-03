@@ -18,8 +18,11 @@ public class Child {
 
     public void wakeup() {
         cry = true;
+
+        WakeUpEvent event = new WakeUpEvent(System.currentTimeMillis(), "garden", this);
+
         for (Observer o: observerList) {
-            o.actionOnWakeUp();
+            o.actionOnWakeUp(event);
         }
     }
 }

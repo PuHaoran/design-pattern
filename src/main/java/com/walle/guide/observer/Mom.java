@@ -10,7 +10,7 @@ public class Mom implements Observer{
     }
 
     @Override
-    public void actionOnWakeUp() {
+    public void actionOnWakeUp(WakeUpEvent event) {
         feed();
     }
 }

@@ -9,7 +9,7 @@ public class Dog implements Observer{
         System.out.println("wang wang.");
     }
     @Override
-    public void actionOnWakeUp() {
+    public void actionOnWakeUp(WakeUpEvent event) {
         shut();
     }
 }

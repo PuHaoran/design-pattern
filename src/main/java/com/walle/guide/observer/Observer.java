@@ -5,5 +5,5 @@ package com.walle.guide.observer;
  * @create 2022/10/2 17:24
  */
 public interface Observer {
-    void actionOnWakeUp();
+    void actionOnWakeUp(WakeUpEvent event);
 }
